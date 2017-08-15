@@ -10,3 +10,8 @@ This example is derived from [MAVROS offboard control example](https://dev.px4.i
 dtoverlay=pi3-disable-bt
 enable_uart=1
 ```
+# Troubleshooting
+
+*  FCU: DeviceError:serial:open: Permission denied
+
+crw-rw----   1  777 dialout 204,  64 Feb 11  2016 ttyAMA0
