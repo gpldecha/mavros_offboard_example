@@ -4,7 +4,7 @@ This example is derived from [MAVROS offboard control example](https://dev.px4.i
 
 # Setting up the raspberry pi 3
 
-1. Edit the folder /boot/config.txt add the following lines:
+1. Edit the file **/boot/config.txt** add the following lines:
 
 ```bash
 dtoverlay=pi3-disable-bt
