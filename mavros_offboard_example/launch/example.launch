@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+<node name="offb" pkg="mavros_offboard_example" type="offb_node" output="screen"/>
+
+
+</launch>
