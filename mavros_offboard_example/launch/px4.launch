@@ -1,0 +1,28 @@
+<launch>
+
+<!-- fcu_url
+ To connect to a specific IP (fcu_url is the IP / port of SITL), 
+  use a URL in this form: udp://:14540@192.168.1.36:14557 
+-->
+<arg name="fcu_url" value="/dev/ttyAMA0:921600"/>
+
+
+<!-- 
+rosrun mavros mavros_node _fcu_url:=/dev/ttyACM0:921600 _gcs_url:=udp://@172.16.254.1
+-->
+<arg name="gcs_url" value=""/>
+
+
+
+<param name="target_system_id" value=""/>
+<param name="target_component_id" value=""/>
+
+<node name="mavros" pkg="mavros" type="mavros_node" output="screen">
+    <param name="fcu_url" value="$(arg fcu_url)" />
+    <param name="gcs_url" value="$(arg gcs_url)" />
+    <!-- automatically start mavlink on USB -->
+    <param name="startup_px4_usb_quirk" value="false" />
+</node>
+
+
+</launch>
