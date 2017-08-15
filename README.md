@@ -13,5 +13,6 @@ enable_uart=1
 # Troubleshooting
 
 *  FCU: DeviceError:serial:open: Permission denied
-
-crw-rw----   1  777 dialout 204,  64 Feb 11  2016 ttyAMA0
+```bash
+ sudo gpasswd -a $USER dialout 
+```
