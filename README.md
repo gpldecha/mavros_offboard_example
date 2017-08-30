@@ -4,12 +4,18 @@ This example is derived from [MAVROS offboard control example](https://dev.px4.i
 
 # Setting up the raspberry pi 3
 
-1. Edit the file **/boot/config.txt** add the following lines:
+* 32 GB SanDisk Ultra 32 GB MicroSDHC UHS-I Memory Card with SD Adapter/. The default 8 GB SD card provided 
+by rasberry will not do. Later one we will be installing ros and other libraries.
+* Falshed SD card with [ubuntu-mate](https://ubuntu-mate.org/raspberry-pi/) with 
+ddrescue command (I tried various GUI options, but always resulted in the SD card being corrupted, somehow).
+
+* Edit the file **/boot/config.txt** add the following lines:
 
 ```bash
 dtoverlay=pi3-disable-bt
 enable_uart=1
 ```
+
 # Troubleshooting
 
 *  FCU: DeviceError:serial:open: Permission denied
